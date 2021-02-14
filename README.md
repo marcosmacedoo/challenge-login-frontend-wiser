@@ -1,8 +1,11 @@
-# Desafio em andamento
+# Challenge Login Frontend Wiser
 
-## Getting Started
+## Como utilizar localmente
 
-First, run the development server:
+- Ao entrar a na pasta do projeto execute `npm install` ou `yarn` para instalar
+os pacotes
+
+- Em seguida, execute o seguinte comando:
 
 ```bash
 npm run dev
@@ -10,4 +13,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Notas
+
+O projeto encontra-se incompleto no momento, no entanto, mais ou menos 90%
+do challenge está feito.

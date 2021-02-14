@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import InputText from '../../../types/input'
 
 export const Container = styled.div`
   width: 16rem;
@@ -48,10 +49,37 @@ export const Subtitle = styled.p`
   }
 `
 
-export const InputGroup = styled.div`
+export const InputGroup = styled.div<InputText>`
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
+  position: relative;
+
+  input {
+    border: 1px solid
+      ${props => props.isValidEmail ? 'var(--blue-light)' : 'var(--pink)'};
+  }
+
+  &::after {
+    content: 'Digite um e-mail válido';
+    display: ${props => props.isValidEmail ? 'none' : 'block'};
+    font-size: 0.750rem;
+    line-height: 2rem;
+    padding-left: 1rem;
+    color: var(--pink);
+  }
+
+  button {
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    background: transparent;
+    border: 0 none;
+    cursor: pointer;
+    opacity: ${props => props.isValidEmail ? 0 : 1};
+  }
 
   @media (max-width: 375px) {
     width: 100%;

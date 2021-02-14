@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import imgWomanDesktop from '../../../public/img/woman-desktop.jpg'
-import imgWomanMobile from '../../../public/img/woman-mobile.jpg'
+import imgWomanDesktop from '../../../assets/woman-desktop.jpg'
+import imgWomanMobile from '../../../assets/woman-mobile.jpg'
 
 export const Container = styled.main`
   display: grid;

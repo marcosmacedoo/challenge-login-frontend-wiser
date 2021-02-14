@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     --blue-dark: #383E71;
     --blue-light: #989FDB;
     --purple: #9626AC;
+    --pink: #FF377F;
   }
 
   *, *::after, *::before {
