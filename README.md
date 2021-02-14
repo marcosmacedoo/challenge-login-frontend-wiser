@@ -1,6 +1,6 @@
 # Challenge Login Frontend Wiser
 
-## Como utilizar localmente
+## Como instalar a aplicação localmente
 
 - Ao entrar a na pasta do projeto execute `npm install` ou `yarn` para instalar
 os pacotes
@@ -12,6 +12,25 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Acesse o projeto em produção
+
+[Challenge Login](https://challenge-login-frontend-wiser.vercel.app/)
+
+## Como utilizar a aplicação?
+
+Foi criado uma [API](https://60288ec0289eb50017cf703e.mockapi.io/users) no MockAPI
+com um usuário cujo os dados são:
+
+```json
+{
+  "id": 1,
+  "email": "marcos@gmail.com",
+  "senha": "123"
+}
+```
+
+Utilize esse usuário para realizar login, caso contrário, não conseguirá logar.
 
 ## Notas
 
