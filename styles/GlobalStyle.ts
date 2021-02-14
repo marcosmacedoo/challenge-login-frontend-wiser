@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     overflow: hidden;
   }
+
+  input, button {
+    outline: 0 none;
+  }
 `
 
 export default GlobalStyle
