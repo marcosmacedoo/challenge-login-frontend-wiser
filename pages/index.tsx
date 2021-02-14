@@ -1,20 +1,15 @@
 import React from 'react'
-import Image from 'next/image'
 import GlobalStyle from '../styles/GlobalStyle'
-import { Container, SectionSignIn, SectionImage } from '../styles/pages/Home'
+import { Container, SectionSignIn, SectionImage, Img } from '../styles/pages/Home'
 import SignIn from '../components/SignIn'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <SectionImage>
-        <Image
-          src="/woman.jpg"
-          width={1100}
-          height={990}
-          layout="responsive"
-        />
+        <Img />
       </SectionImage>
+
       <SectionSignIn>
         <SignIn />
       </SectionSignIn>

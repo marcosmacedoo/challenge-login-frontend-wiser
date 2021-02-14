@@ -6,6 +6,19 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 12rem 0;
+
+  @media (max-width: 375px) {
+    margin: 0;
+    background: white;
+    width: 85%;
+    height: 20rem;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+  }
+
+  @media (max-width: 345px) {
+    height: 23.5rem;
+  }
 `
 
 export const Title = styled.h1`
@@ -13,6 +26,12 @@ export const Title = styled.h1`
   font-weight: normal;
   line-height: 3rem;
   color: var(--blue-dark);
+
+  @media (max-width: 375px) {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 `
 
 export const Subtitle = styled.p`
@@ -21,16 +40,32 @@ export const Subtitle = styled.p`
   font-weight: 600;
   line-height: 1.25rem;
   color: var(--blue-light);
+
+  @media (max-width: 375px) {
+    margin: 1rem 0;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
 `
 
 export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 `
 
 export const Form = styled.form`
   width: 100%;
+
+  @media (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Label = styled.label`
@@ -38,6 +73,10 @@ export const Label = styled.label`
   color: var(--blue-dark);
   line-height: 2rem;
   text-transform: uppercase;
+
+  @media (max-width: 375px) {
+    font-size: 0.625rem;
+  }
 `
 
 export const Input = styled.input`
@@ -64,6 +103,11 @@ export const Button = styled.button`
   font-weight: 600;
   color: white;
   cursor: pointer;
+
+  @media (max-width: 375px) {
+    width: 10.5rem;
+    box-shadow: 0 0 0 0;
+  }
 `
 
 export const ContainerForgetPassword = styled.div`
@@ -78,5 +122,14 @@ export const ContainerForgetPassword = styled.div`
 
   a {
     color: var(--purple);
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 1.5rem;
+    color: white;
+
+    a {
+      color: white;
+    }
   }
 `
