@@ -13,6 +13,9 @@ npm run dev
 yarn dev
 ```
 
+Então abra o navegador de sua preferência e entre no seguinte endereço
+`http://localhost:3000`
+
 ## Acesse o projeto em produção
 
 [Challenge Login](https://challenge-login-frontend-wiser.vercel.app/)
@@ -32,7 +35,14 @@ com um usuário cujo os dados são:
 
 Utilize esse usuário para realizar login, caso contrário, não conseguirá logar.
 
-## Notas
+## Observação
 
 O projeto encontra-se incompleto no momento, no entanto, mais ou menos 90%
 do challenge está feito.
+
+Melhorias que irão ser adicionadas:
+
+- [ ] Adição de Eslint
+- [ ] Criação de mais components
+- [ ] Criação de testes
+- [ ] Implementação de Redux
