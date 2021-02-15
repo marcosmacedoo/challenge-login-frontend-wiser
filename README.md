@@ -46,3 +46,5 @@ Melhorias que irão ser adicionadas:
 - [ ] Criação de mais components
 - [ ] Criação de testes
 - [ ] Implementação de Redux
+
+O **Challengue** se encontra dentro da pasta `.github`
