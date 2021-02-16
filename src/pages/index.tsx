@@ -3,13 +3,18 @@ import Image from 'next/image'
 import GlobalStyle from '../styles/GlobalStyle'
 import { Container, SectionSignIn, SectionImage } from '../styles/pages/Home'
 import SignIn from '../components/SignIn'
-import womanFull from '../assets/woman-desktop.jpg'
+import womanDesktop from '../assets/woman-desktop.jpg'
 
 const Home: React.FC = () => {
   return (
     <Container>
       <SectionImage>
-        <Image src={womanFull} layout="fill" objectFit="cover" />
+        <Image
+          src={womanDesktop}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
       </SectionImage>
 
       <SectionSignIn>
