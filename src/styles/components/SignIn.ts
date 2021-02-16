@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import InputText from '../../../types/input'
+import InputText from '../../types/input'
 
 export const Container = styled.div`
   width: 16rem;
@@ -57,13 +57,13 @@ export const InputGroup = styled.div<InputText>`
 
   input {
     border: 1px solid
-      ${props => props.isValidEmail ? 'var(--blue-light)' : 'var(--pink)'};
+      ${props => (props.isValidEmail ? 'var(--blue-light)' : 'var(--pink)')};
   }
 
   &::after {
     content: 'Digite um e-mail válido';
-    display: ${props => props.isValidEmail ? 'none' : 'block'};
-    font-size: 0.750rem;
+    display: ${props => (props.isValidEmail ? 'none' : 'block')};
+    font-size: 0.75rem;
     line-height: 2rem;
     padding-left: 1rem;
     color: var(--pink);
@@ -78,7 +78,7 @@ export const InputGroup = styled.div<InputText>`
     background: transparent;
     border: 0 none;
     cursor: pointer;
-    opacity: ${props => props.isValidEmail ? 0 : 1};
+    opacity: ${props => (props.isValidEmail ? 0 : 1)};
   }
 
   @media (max-width: 375px) {
@@ -97,7 +97,7 @@ export const Form = styled.form`
 `
 
 export const Label = styled.label`
-  font-size: 0.750rem;
+  font-size: 0.75rem;
   color: var(--blue-dark);
   line-height: 2rem;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ export const Input = styled.input`
   border: 1px solid var(--blue-light);
   border-radius: 0.5rem;
   color: var(--blue-light);
-  font-size: 0.750rem;
+  font-size: 0.75rem;
   line-height: 3rem;
   outline: none;
 `
@@ -124,13 +124,18 @@ export const Button = styled.button`
   margin-top: 1rem;
   border: none;
   text-transform: uppercase;
-  background: linear-gradient(267.79deg, #383E71 0%, #9D25B0 99.18%);
-  box-shadow: 0px 10px 25px #CF99DB;
+  background: linear-gradient(267.79deg, #383e71 0%, #9d25b0 99.18%);
+  box-shadow: 0px 10px 25px #cf99db;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: white;
+  transition: 0.5s;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media (max-width: 375px) {
     width: 10.5rem;

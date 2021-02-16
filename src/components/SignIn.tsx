@@ -10,11 +10,11 @@ import {
   Input,
   Button,
   ContainerForgetPassword
-} from '../../styles/components/SignIn'
-import api from '../../pages/api'
-import User from '../../types/user'
-import emailValidation from '../../utils/emailValidation'
-import IconClose from '../../assets/icon-close.svg'
+} from '../styles/components/SignIn'
+import api from '../pages/api'
+import User from '../types/user'
+import emailValidation from '../utils/emailValidation'
+import IconClose from '../assets/icon-close.svg'
 
 const SignIn: React.FC = () => {
   const [email, setEmail] = useState('')
@@ -55,7 +55,6 @@ const SignIn: React.FC = () => {
     } else {
       alert('Erro ao realizar login. Verifique seus dados novamente')
     }
-
   }
 
   const handleClickIconClose = (event: FormEvent<HTMLButtonElement>) => {
@@ -79,6 +78,7 @@ const SignIn: React.FC = () => {
             id="email"
             onChange={event => setEmail(event.target.value)}
             value={email}
+            required
           />
           <button type="button" onClick={event => handleClickIconClose(event)}>
             <IconClose />

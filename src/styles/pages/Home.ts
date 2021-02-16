@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import imgWomanDesktop from '../../../assets/woman-desktop.jpg'
-import imgWomanMobile from '../../../assets/woman-mobile.jpg'
+import imgWomanDesktop from '../../assets/woman-desktop.jpg'
+import imgWomanMobile from '../../assets/woman-mobile.jpg'
 
 export const Container = styled.main`
   display: grid;
@@ -28,7 +28,7 @@ export const SectionImage = styled.section`
 `
 
 export const Img = styled.img`
-  width: 100% ;
+  width: 100%;
   height: 101%;
   background: url(${imgWomanDesktop}) no-repeat center center;
   background-size: cover;
