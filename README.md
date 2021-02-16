@@ -42,9 +42,9 @@ do challenge está feito.
 
 Melhorias que irão ser adicionadas:
 
-- [ ] Adição de Eslint
+- [x] Adição de Eslint
 - [ ] Criação de mais components
-- [ ] Criação de testes
 - [ ] Implementação de Redux
+- [ ] Criação de testes
 
 O **Challengue** se encontra dentro da pasta `.github`
