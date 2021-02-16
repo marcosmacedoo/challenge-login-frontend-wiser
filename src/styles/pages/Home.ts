@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-import imgWomanDesktop from '../../assets/woman-desktop.jpg'
-import imgWomanMobile from '../../assets/woman-mobile.jpg'
-
 export const Container = styled.main`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -16,6 +13,7 @@ export const Container = styled.main`
 export const SectionImage = styled.section`
   min-height: 100vh;
   grid-column: 1 / 8;
+  position: relative;
 
   @media (max-width: 768px) {
     grid-column: 1 / 6;
@@ -24,17 +22,6 @@ export const SectionImage = styled.section`
   @media (max-width: 375px) {
     min-height: 100vh;
     grid-column: 1 / 2;
-  }
-`
-
-export const Img = styled.img`
-  width: 100%;
-  height: 101%;
-  background: url(${imgWomanDesktop}) no-repeat center center;
-  background-size: cover;
-
-  @media (max-width: 375px) {
-    background: url(${imgWomanMobile}) no-repeat;
   }
 `
 
