@@ -9,12 +9,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <SectionImage>
-        <Image
-          src={womanDesktop}
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
+        <Image src={womanDesktop} layout="fill" objectFit="cover" priority />
       </SectionImage>
 
       <SectionSignIn>
